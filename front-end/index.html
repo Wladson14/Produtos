@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Produtos</title>
+</head>
+<body>
+    <h1>Cadastro de Produtos</h1>
+
+    <form id="formProduto">
+        <input type="text" placeholder="Nome" id="nome" required>
+        <input type="number" step="0.01" placeholder="Valor" id="valor" required>
+        <input type="number" placeholder="Estoque" id="estoque" required>
+        <button type="submit">Cadastrar</button>
+    </form>
+
+     <table>
+    <thead>
+      <tr>
+        <th>Nome</th>
+        <th>Valor</th>
+        <th>Estoque</th>
+        <th>Ações</th>
+      </tr>
+    </thead>
+    <tbody id="listaProdutos"></tbody>
+  </table>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
